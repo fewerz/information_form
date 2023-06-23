@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Information Form</title>
+</head>
+<body>
+  <h1>Information Form</h1>
+  <form action="/submit" method="post">
+    <label for="name">Name-Surname:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="phone">Tel-phone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <input type="checkbox" id="agreement" name="agreement" required>
+    <label for="agreement">Please accept rule and agreement</label>
+    <a href="/confirmation.html">READ ME</a><br>
+
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>
