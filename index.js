@@ -27,14 +27,14 @@ app.post('/submit', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'your-email@gmail.com',
-      pass: 'your-password'
+      user: 'few.test.intern@gmail.com',
+      pass: 'xcthnwdixucjwluc'
     }
   });
 
   const mailOptions = {
-    from: 'your-email@gmail.com',
-    to: 'hr@example.com',
+    from: 'few.test.intern@gmail.com',
+    to: 'fese1177@hotmail.com',
     subject: 'information form - information',
     html: `
       <h2>information form - information</h2>
@@ -50,7 +50,7 @@ app.post('/submit', (req, res) => {
       res.send('error for send mail');
     } else {
       console.log('email has send to HR');
-      res.redirect('/confirmation');
+      res.send('email has send to HR');
     }
   });
 });
